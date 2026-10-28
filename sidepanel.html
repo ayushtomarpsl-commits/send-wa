@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Click Sender</title>
+<link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <h1>Click Sender</h1>
+      <p class="muted small"><span class="L en">Manual · you press Send each time</span><span class="L hi">मैनुअल · हर बार आप ख़ुद Send दबाते हैं</span></p>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" class="chip on" data-lang-btn="en" aria-pressed="true">EN</button>
+      <button type="button" class="chip" data-lang-btn="hi" aria-pressed="false" lang="hi">हिं</button>
+    </div>
+  </header>
+
+  <div class="banner" role="note">
+    <span class="L en">This panel does <b>not</b> send on its own. For each contact it opens WhatsApp with your message ready — you check it and press Send. Only message people who agreed to hear from you.</span>
+    <span class="L hi">यह पैनल ख़ुद से कुछ <b>नहीं</b> भेजता। हर कॉन्टैक्ट के लिए WhatsApp खोलता है, मैसेज तैयार रहता है — आप जाँच कर Send दबाते हैं। सिर्फ़ उन्हीं को भेजें जिन्होंने सहमति दी है।</span>
+  </div>
+
+  <nav class="tabs" role="tablist" aria-label="Sections" id="tabs">
+    <button type="button" role="tab" data-tab="send" aria-selected="true" id="tab-send"><span class="L en">Send</span><span class="L hi">भेजें</span></button>
+    <button type="button" role="tab" data-tab="optouts" aria-selected="false" id="tab-optouts"><span class="L en">Opt-outs</span><span class="L hi">ऑप्ट-आउट</span></button>
+    <button type="button" role="tab" data-tab="help" aria-selected="false" id="tab-help"><span class="L en">Help</span><span class="L hi">मदद</span></button>
+  </nav>
+
+  <main id="panel" role="tabpanel" aria-labelledby="tab-send"></main>
+</div>
+<script src="sidepanel.js"></script>
+</body>
+</html>
